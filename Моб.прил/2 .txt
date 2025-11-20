@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMauiApp.LoginPage"
+             Title="Вход в систему">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <!-- Заголовок -->
+            <Label 
+                Text="Добро пожаловать!"
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <!-- Поле для логина -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Логин:" FontSize="16"/>
+                <Entry 
+                    Placeholder="Введите ваш логин"
+                    FontSize="18"
+                    HeightRequest="50" />
+            </VerticalStackLayout>
+
+            <!-- Поле для пароля -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Пароль:" FontSize="16"/>
+                <Entry 
+                    Placeholder="Введите ваш пароль"
+                    FontSize="18"
+                    HeightRequest="50"
+                    IsPassword="True" />
+            </VerticalStackLayout>
+
+            <!-- Кнопка входа -->
+            <Button 
+                x:Name="LoginButton"
+                Text="Войти"
+                FontSize="20"
+                HeightRequest="60"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
